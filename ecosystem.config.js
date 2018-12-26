@@ -10,7 +10,7 @@ module.exports = {
             key: 'C:/Users/Clint/Desktop/clsulliKey.pem',
             ref: 'origin/master',
             repo: 'git@github.com:clsulli/njs-web.git',
-            path: 'C:/Users/Clint/Desktop/projects/njs/ahp',
+            path: 'C:/Users/Clint/Desktop/projects/njs-ahp',
             'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
         }
     }
