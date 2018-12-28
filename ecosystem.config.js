@@ -1,7 +1,7 @@
 module.exports = {
     apps: [{
         name: 'njs-ahp',
-        script: 'index.js'
+        script: './index.js'
     }],
     deploy: {
         production: {
