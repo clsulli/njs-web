@@ -7,23 +7,23 @@ html(lang='en')
     meta(name='description', content='Snow - Clean & Minimal Portfolio HTML template.')
     meta(name='keywords', content='portfolio, clean, minimal, blog, template, portfolio website')
     meta(name='author', content='nK')
-    link(rel='icon', type='image/png', href='assets/images/favicon.png')
+    link(rel='icon', type='image/png', href='/images/favicon.png')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     // START: Styles
     // Google Fonts
     link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', href='assets/css/combined.css')
+    link(rel='stylesheet', href='/css/combined.css')
     // END: Styles
   body
-    header.nk-header
+    header#header.nk-header
       //
         START: Navbar
-      nav.nk-navbar.nk-navbar-top.nk-navbar-sticky.nk-navbar-transparent.nk-navbar-white-text-on-top
+      nav#navbar.nk-navbar.nk-navbar-top.nk-navbar-sticky.nk-navbar-transparent.nk-navbar-white-text-on-top
         .container
           .nk-nav-table
             a.nk-nav-logo(href='index.html')
-              img.nk-nav-logo-onscroll(src='assets/images/logo-light.svg', alt='', width='85')
-              img(src='assets/images/logo.svg', alt='', width='85')
+              img.nk-nav-logo-onscroll(src='/images/logo-light.svg', alt='', width='85')
+              img(src='/images/logo.svg', alt='', width='85')
             ul.nk-nav.nk-nav-right.hidden-md-down(data-nav-mobile='#nk-nav-mobile')
               li
                 a(href='index.html#about') About
@@ -41,18 +41,17 @@ html(lang='en')
                     span.nk-t-2
                     span.nk-t-3
       // END: Navbar
-      //
-        START: Navbar Mobile
+      //START: Navbar Mobile
       nav#nk-nav-mobile.nk-navbar.nk-navbar-full.nk-navbar-align-center
         .nk-navbar-bg
-          .bg-image(style="background-image: url('assets/images/bg-menu.jpg')")
+          .bg-image(style="background-image: url('/images/bg-menu.jpg')")
         .nk-nav-table
           .nk-nav-row
             .container
               .nk-nav-header
                 .nk-nav-logo
                   a.nk-nav-logo(href='index.html')
-                    img(src='assets/images/logo-light.svg', alt='', width='85')
+                    img(src='/images/logo-light.svg', alt='', width='85')
                 .nk-nav-close.nk-navbar-full-toggle
                   span.nk-icon-close
           .nk-nav-row-full.nk-nav-row
@@ -83,7 +82,7 @@ html(lang='en')
         // START: Header Title
         .nk-header-title.nk-header-title-full
           .bg-image
-            div(style="background-image: url('assets/images/home-7.jpg');")
+            div(style="background-image: url('/images/home-7.jpg');")
             .bg-image-overlay(style='background-color: rgba(12, 12, 12, 0.6);')
           .nk-header-table
             .nk-header-table-cell
@@ -111,12 +110,12 @@ html(lang='en')
                 .nk-gap.mnt-5
                 p
                   | We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps. Clever use of technology and lean processes enable us to work faster and smarter.
-                img.nk-img-fit(src='assets/images/about-me-signature.png', alt='')
+                img.nk-img-fit(src='/images/about-me-signature.png', alt='')
                 .nk-gap-4.mt-25
         // END: About Our Agency
         // START: Features
         .nk-box.bg-dark-1.text-white
-          .bg-image.bg-image-parallax(style="background-image: url('assets/images/bg-pattern.jpg');")
+          .bg-image.bg-image-parallax(style="background-image: url('/images/bg-pattern.jpg');")
           .nk-gap-5.mnt-6
           .container
             .row.vertical-gap
@@ -167,7 +166,7 @@ html(lang='en')
                 .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
                   a.nk-portfolio-item-link(href='portfolio-single.html')
                   .nk-portfolio-item-image
-                    div(style="background-image: url('assets/images/portfolio-7-sm.jpg');")
+                    div(style="background-image: url('/images/portfolio-7-sm.jpg');")
                   .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
                     div
                       h2.portfolio-item-title.h3 Vinyl Record
@@ -176,7 +175,7 @@ html(lang='en')
                 .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
                   a.nk-portfolio-item-link(href='portfolio-single.html')
                   .nk-portfolio-item-image
-                    div(style="background-image: url('assets/images/portfolio-4-sm.jpg');")
+                    div(style="background-image: url('/images/portfolio-4-sm.jpg');")
                   .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
                     div
                       h2.portfolio-item-title.h3 Modern T-Shirt
@@ -185,7 +184,7 @@ html(lang='en')
                 .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
                   a.nk-portfolio-item-link(href='portfolio-single.html')
                   .nk-portfolio-item-image
-                    div(style="background-image: url('assets/images/portfolio-5-sm.jpg');")
+                    div(style="background-image: url('/images/portfolio-5-sm.jpg');")
                   .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
                     div
                       h2.portfolio-item-title.h3 Minimal Bag
@@ -194,7 +193,7 @@ html(lang='en')
                 .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
                   a.nk-portfolio-item-link(href='portfolio-single.html')
                   .nk-portfolio-item-image
-                    div(style="background-image: url('assets/images/portfolio-9-sm.jpg');")
+                    div(style="background-image: url('/images/portfolio-9-sm.jpg');")
                   .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
                     div
                       h2.portfolio-item-title.h3 Clean & Groovy
@@ -203,7 +202,7 @@ html(lang='en')
                 .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
                   a.nk-portfolio-item-link(href='portfolio-single.html')
                   .nk-portfolio-item-image
-                    div(style="background-image: url('assets/images/portfolio-3-sm.jpg');")
+                    div(style="background-image: url('/images/portfolio-3-sm.jpg');")
                   .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
                     div
                       h2.portfolio-item-title.h3 Minimal Mobile App
@@ -212,7 +211,7 @@ html(lang='en')
                 .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
                   a.nk-portfolio-item-link(href='portfolio-single.html')
                   .nk-portfolio-item-image
-                    div(style="background-image: url('assets/images/portfolio-8-sm.jpg');")
+                    div(style="background-image: url('/images/portfolio-8-sm.jpg');")
                   .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
                     div
                       h2.portfolio-item-title.h3 White T-Shirt
@@ -221,7 +220,7 @@ html(lang='en')
                 .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
                   a.nk-portfolio-item-link(href='portfolio-single.html')
                   .nk-portfolio-item-image
-                    div(style="background-image: url('assets/images/portfolio-2-sm.jpg');")
+                    div(style="background-image: url('/images/portfolio-2-sm.jpg');")
                   .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
                     div
                       h2.portfolio-item-title.h3 Business Card
@@ -230,7 +229,7 @@ html(lang='en')
                 .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
                   a.nk-portfolio-item-link(href='portfolio-single.html')
                   .nk-portfolio-item-image
-                    div(style="background-image: url('assets/images/portfolio-6-sm.jpg');")
+                    div(style="background-image: url('/images/portfolio-6-sm.jpg');")
                   .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
                     div
                       h2.portfolio-item-title.h3 Heja Stockholm
@@ -239,7 +238,7 @@ html(lang='en')
                 .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
                   a.nk-portfolio-item-link(href='portfolio-single.html')
                   .nk-portfolio-item-image
-                    div(style="background-image: url('assets/images/portfolio-12-sm.jpg');")
+                    div(style="background-image: url('/images/portfolio-12-sm.jpg');")
                   .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
                     div
                       h2.portfolio-item-title.h3 Paper Bag
@@ -248,7 +247,7 @@ html(lang='en')
         // END: Portfolio
         // START: Reviews
         .nk-box.bg-dark-1
-          .bg-image.bg-image-parallax(style="background-image: url('assets/images/bg-pattern.jpg');")
+          .bg-image.bg-image-parallax(style="background-image: url('/images/bg-pattern.jpg');")
           .nk-gap-5.mnt-6
           .nk-gap-3
           .container-fluid
@@ -287,35 +286,35 @@ html(lang='en')
                 div
                   div
                     .nk-box-1
-                      img.nk-img-fit(src='assets/images/partner-logo-1-dark.png', alt='')
+                      img.nk-img-fit(src='/images/partner-logo-1-dark.png', alt='')
                 div
                   div
                     .nk-box-1
-                      img.nk-img-fit(src='assets/images/partner-logo-2-dark.png', alt='')
+                      img.nk-img-fit(src='/images/partner-logo-2-dark.png', alt='')
                 div
                   div
                     .nk-box-1
-                      img.nk-img-fit(src='assets/images/partner-logo-3-dark.png', alt='')
+                      img.nk-img-fit(src='/images/partner-logo-3-dark.png', alt='')
                 div
                   div
                     .nk-box-1
-                      img.nk-img-fit(src='assets/images/partner-logo-4-dark.png', alt='')
+                      img.nk-img-fit(src='/images/partner-logo-4-dark.png', alt='')
                 div
                   div
                     .nk-box-1
-                      img.nk-img-fit(src='assets/images/partner-logo-5-dark.png', alt='')
+                      img.nk-img-fit(src='/images/partner-logo-5-dark.png', alt='')
                 div
                   div
                     .nk-box-1
-                      img.nk-img-fit(src='assets/images/partner-logo-6-dark.png', alt='')
+                      img.nk-img-fit(src='/images/partner-logo-6-dark.png', alt='')
                 div
                   div
                     .nk-box-1
-                      img.nk-img-fit(src='assets/images/partner-logo-7-dark.png', alt='')
+                      img.nk-img-fit(src='/images/partner-logo-7-dark.png', alt='')
                 div
                   div
                     .nk-box-1
-                      img.nk-img-fit(src='assets/images/partner-logo-8-dark.png', alt='')
+                      img.nk-img-fit(src='/images/partner-logo-8-dark.png', alt='')
         // END: Partners
         // START: Blog
         #blog.nk-box.bg-gray-1
@@ -338,7 +337,7 @@ html(lang='en')
                       .nk-blog-post
                         .nk-post-thumb
                           a(href='blog-single.html')
-                            img.nk-img-stretch(src='assets/images/post-1-mid.jpg', alt='')
+                            img.nk-img-stretch(src='/images/post-1-mid.jpg', alt='')
                           .nk-post-category
                             a(href='#') Nature
                         h2.nk-post-title.h4
@@ -355,7 +354,7 @@ html(lang='en')
                       .nk-blog-post
                         .nk-post-thumb
                           a(href='blog-single.html')
-                            img.nk-img-stretch(src='assets/images/post-3-mid.jpg', alt='')
+                            img.nk-img-stretch(src='/images/post-3-mid.jpg', alt='')
                           .nk-post-category
                             a(href='#') Nature
                         h2.nk-post-title.h4
@@ -372,7 +371,7 @@ html(lang='en')
                       .nk-blog-post
                         .nk-post-thumb
                           a(href='blog-single.html')
-                            img.nk-img-stretch(src='assets/images/post-4-mid.jpg', alt='')
+                            img.nk-img-stretch(src='/images/post-4-mid.jpg', alt='')
                           .nk-post-category
                             a(href='#') Branding
                         h2.nk-post-title.h4
@@ -389,7 +388,7 @@ html(lang='en')
                       .nk-blog-post
                         .nk-post-thumb
                           a(href='blog-single.html')
-                            img.nk-img-stretch(src='assets/images/post-5-mid.jpg', alt='')
+                            img.nk-img-stretch(src='/images/post-5-mid.jpg', alt='')
                           .nk-post-category
                             a(href='#') Design
                         h2.nk-post-title.h4
@@ -406,7 +405,7 @@ html(lang='en')
                       .nk-blog-post
                         .nk-post-thumb
                           a(href='blog-single.html')
-                            img.nk-img-stretch(src='assets/images/post-6-mid.jpg', alt='')
+                            img.nk-img-stretch(src='/images/post-6-mid.jpg', alt='')
                           .nk-post-category
                             a(href='#') Design
                         h2.nk-post-title.h4
@@ -486,5 +485,6 @@ html(lang='en')
                 p 2016 © Design by Unvab. Code by nK
         // END: Footer
         // START: Scripts
-        script(src='assets/js/combined.js')
+        script(src='/js/combined.js')
+        script(src='/js/removeBlock.js')
         // END: Scripts
