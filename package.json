@@ -1,16 +1,16 @@
 {
   "name": "njs-ahp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Alan's photography website.",
+  "main": "server.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clsulli/njs-web.git"
   },
-  "author": "",
+  "author": "Clint Sullivan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/clsulli/njs-web/issues"
@@ -18,9 +18,6 @@
   "homepage": "https://github.com/clsulli/njs-web#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "npm": "^6.5.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.9"
+    "pug": "^2.0.3"
   }
 }

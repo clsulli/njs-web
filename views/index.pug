@@ -1,0 +1,490 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Snow | One Page Agency
+    meta(name='description', content='Snow - Clean & Minimal Portfolio HTML template.')
+    meta(name='keywords', content='portfolio, clean, minimal, blog, template, portfolio website')
+    meta(name='author', content='nK')
+    link(rel='icon', type='image/png', href='assets/images/favicon.png')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // START: Styles
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='assets/css/combined.css')
+    // END: Styles
+  body
+    header.nk-header
+      //
+        START: Navbar
+      nav.nk-navbar.nk-navbar-top.nk-navbar-sticky.nk-navbar-transparent.nk-navbar-white-text-on-top
+        .container
+          .nk-nav-table
+            a.nk-nav-logo(href='index.html')
+              img.nk-nav-logo-onscroll(src='assets/images/logo-light.svg', alt='', width='85')
+              img(src='assets/images/logo.svg', alt='', width='85')
+            ul.nk-nav.nk-nav-right.hidden-md-down(data-nav-mobile='#nk-nav-mobile')
+              li
+                a(href='index.html#about') About
+              li
+                a(href='index.html#contact') Contact
+              li
+                a(href='portfolio.html') Portfolio
+              li
+                a(href='blog.html') Blog
+            ul.nk-nav.nk-nav-right.nk-nav-icons
+              li.single-icon.hidden-lg-up
+                a.nk-navbar-full-toggle(href='#')
+                  span.nk-icon-burger
+                    span.nk-t-1
+                    span.nk-t-2
+                    span.nk-t-3
+      // END: Navbar
+      //
+        START: Navbar Mobile
+      nav#nk-nav-mobile.nk-navbar.nk-navbar-full.nk-navbar-align-center
+        .nk-navbar-bg
+          .bg-image(style="background-image: url('assets/images/bg-menu.jpg')")
+        .nk-nav-table
+          .nk-nav-row
+            .container
+              .nk-nav-header
+                .nk-nav-logo
+                  a.nk-nav-logo(href='index.html')
+                    img(src='assets/images/logo-light.svg', alt='', width='85')
+                .nk-nav-close.nk-navbar-full-toggle
+                  span.nk-icon-close
+          .nk-nav-row-full.nk-nav-row
+            .nano
+              .nano-content
+                .nk-nav-table
+                  .nk-nav-row.nk-nav-row-full.nk-nav-row-center.nk-navbar-mobile-content
+                    ul.nk-nav
+                      // Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"]
+          .nk-nav-row
+            .container
+              .nk-nav-social
+                ul
+                  li
+                    a(href='https://twitter.com/nkdevv')
+                      i.fa.fa-twitter
+                  li
+                    a(href='https://www.facebook.com/unvabdesign/')
+                      i.fa.fa-facebook
+                  li
+                    a(href='https://dribbble.com/_nK')
+                      i.fa.fa-dribbble
+                  li
+                    a(href='https://www.instagram.com/unvab/')
+                      i.fa.fa-instagram
+      // END: Navbar Mobile
+      .nk-main
+        // START: Header Title
+        .nk-header-title.nk-header-title-full
+          .bg-image
+            div(style="background-image: url('assets/images/home-7.jpg');")
+            .bg-image-overlay(style='background-color: rgba(12, 12, 12, 0.6);')
+          .nk-header-table
+            .nk-header-table-cell
+              .container
+                h2.nk-subtitle.text-white New Branding Agency
+                h1.nk-title.display-3.text-white
+                  | We are about to change the way
+                  br
+                  em.fw-400 you publish on the web
+                .nk-gap
+                .nk-header-text.text-white
+                  .nk-gap-4
+          div
+            a.nk-header-title-scroll-down.text-white(href='#nk-header-title-scroll-down')
+              span.pe-7s-angle-down
+        #nk-header-title-scroll-down
+        // END: Header Title
+        // START: About Our Agency
+        #about.bg-white
+          .container
+            .row
+              .col-lg-8.offset-lg-2.text-xs-center
+                .nk-gap-4.mt-9
+                h2.display-4 About Our Agency
+                .nk-gap.mnt-5
+                p
+                  | We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps. Clever use of technology and lean processes enable us to work faster and smarter.
+                img.nk-img-fit(src='assets/images/about-me-signature.png', alt='')
+                .nk-gap-4.mt-25
+        // END: About Our Agency
+        // START: Features
+        .nk-box.bg-dark-1.text-white
+          .bg-image.bg-image-parallax(style="background-image: url('assets/images/bg-pattern.jpg');")
+          .nk-gap-5.mnt-6
+          .container
+            .row.vertical-gap
+              .col-md-6.col-lg-3
+                .nk-ibox-1
+                  .nk-ibox-icon
+                    span.pe-7s-portfolio
+                  .nk-ibox-cont
+                    .nk-ibox-title 548
+                    .nk-ibox-text Projects Completed
+              .col-md-6.col-lg-3
+                .nk-ibox-1
+                  .nk-ibox-icon
+                    span.pe-7s-clock
+                  .nk-ibox-cont
+                    .nk-ibox-title 1465
+                    .nk-ibox-text Working Hours
+              .col-md-6.col-lg-3
+                .nk-ibox-1
+                  .nk-ibox-icon
+                    span.pe-7s-star
+                  .nk-ibox-cont
+                    .nk-ibox-title 612
+                    .nk-ibox-text Positive Feedbacks
+              .col-md-6.col-lg-3
+                .nk-ibox-1
+                  .nk-ibox-icon
+                    span.pe-7s-like
+                  .nk-ibox-cont
+                    .nk-ibox-title 735
+                    .nk-ibox-text Happy Clients
+          .nk-gap-5.mnt-6
+        // END: Features
+        // START: Portfolio
+        #projects.nk-box.bg-white
+          .nk-gap-4.mt-5
+          h2.text-xs-center.display-4 Best Projects
+          .nk-gap.mnt-6
+          .container
+            .row
+              .col-lg-8.offset-lg-2
+                .text-xs-center
+                  | Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. Etiam,pellentesque faucibus. Vestibulum gravida volutpat ipsum non ultrices.
+          .nk-gap-2.mt-12
+          .container
+            .nk-portfolio-list.nk-isotope.nk-isotope-3-cols
+              .nk-isotope-item(data-filter='Mockup')
+                .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                  a.nk-portfolio-item-link(href='portfolio-single.html')
+                  .nk-portfolio-item-image
+                    div(style="background-image: url('assets/images/portfolio-7-sm.jpg');")
+                  .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                    div
+                      h2.portfolio-item-title.h3 Vinyl Record
+                      .portfolio-item-category Mockup
+              .nk-isotope-item(data-filter='Print')
+                .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                  a.nk-portfolio-item-link(href='portfolio-single.html')
+                  .nk-portfolio-item-image
+                    div(style="background-image: url('assets/images/portfolio-4-sm.jpg');")
+                  .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                    div
+                      h2.portfolio-item-title.h3 Modern T-Shirt
+                      .portfolio-item-category Print
+              .nk-isotope-item(data-filter='Branding')
+                .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                  a.nk-portfolio-item-link(href='portfolio-single.html')
+                  .nk-portfolio-item-image
+                    div(style="background-image: url('assets/images/portfolio-5-sm.jpg');")
+                  .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                    div
+                      h2.portfolio-item-title.h3 Minimal Bag
+                      .portfolio-item-category Branding
+              .nk-isotope-item(data-filter='Design')
+                .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                  a.nk-portfolio-item-link(href='portfolio-single.html')
+                  .nk-portfolio-item-image
+                    div(style="background-image: url('assets/images/portfolio-9-sm.jpg');")
+                  .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                    div
+                      h2.portfolio-item-title.h3 Clean & Groovy
+                      .portfolio-item-category Design
+              .nk-isotope-item(data-filter='Design')
+                .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                  a.nk-portfolio-item-link(href='portfolio-single.html')
+                  .nk-portfolio-item-image
+                    div(style="background-image: url('assets/images/portfolio-3-sm.jpg');")
+                  .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                    div
+                      h2.portfolio-item-title.h3 Minimal Mobile App
+                      .portfolio-item-category Design
+              .nk-isotope-item(data-filter='Print')
+                .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                  a.nk-portfolio-item-link(href='portfolio-single.html')
+                  .nk-portfolio-item-image
+                    div(style="background-image: url('assets/images/portfolio-8-sm.jpg');")
+                  .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                    div
+                      h2.portfolio-item-title.h3 White T-Shirt
+                      .portfolio-item-category Print
+              .nk-isotope-item(data-filter='Branding')
+                .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                  a.nk-portfolio-item-link(href='portfolio-single.html')
+                  .nk-portfolio-item-image
+                    div(style="background-image: url('assets/images/portfolio-2-sm.jpg');")
+                  .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                    div
+                      h2.portfolio-item-title.h3 Business Card
+                      .portfolio-item-category Branding
+              .nk-isotope-item(data-filter='Photography')
+                .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                  a.nk-portfolio-item-link(href='portfolio-single.html')
+                  .nk-portfolio-item-image
+                    div(style="background-image: url('assets/images/portfolio-6-sm.jpg');")
+                  .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                    div
+                      h2.portfolio-item-title.h3 Heja Stockholm
+                      .portfolio-item-category Photography
+              .nk-isotope-item(data-filter='Photography')
+                .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                  a.nk-portfolio-item-link(href='portfolio-single.html')
+                  .nk-portfolio-item-image
+                    div(style="background-image: url('assets/images/portfolio-12-sm.jpg');")
+                  .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                    div
+                      h2.portfolio-item-title.h3 Paper Bag
+                      .portfolio-item-category Photography
+          .nk-gap-4.mt-15
+        // END: Portfolio
+        // START: Reviews
+        .nk-box.bg-dark-1
+          .bg-image.bg-image-parallax(style="background-image: url('assets/images/bg-pattern.jpg');")
+          .nk-gap-5.mnt-6
+          .nk-gap-3
+          .container-fluid
+            // START: Carousel
+            .nk-carousel.nk-carousel-all-visible.text-white(data-autoplay='18000', data-dots='true')
+              .nk-carousel-inner
+                div
+                  div
+                    blockquote.nk-blockquote-style-1.text-white
+                      p
+                        | Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.
+                      cite Michael Hopkins
+                    .nk-gap-3.mt-10
+                div
+                  div
+                    blockquote.nk-blockquote-style-1.text-white
+                      p
+                        | Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.
+                      cite Michael Hopkins
+                    .nk-gap-3.mt-10
+                div
+                  div
+                    blockquote.nk-blockquote-style-1.text-white
+                      p
+                        | Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap.
+                      cite Michael Hopkins
+                    .nk-gap-3.mt-10
+            // END: Carousel
+          .nk-gap-4.mt-3
+        // END: Reviews
+        // START: Partners
+        .bg-white
+          .container
+            .nk-carousel-2.nk-carousel-x4.nk-carousel-no-margin.nk-carousel-all-visible
+              .nk-carousel-inner
+                div
+                  div
+                    .nk-box-1
+                      img.nk-img-fit(src='assets/images/partner-logo-1-dark.png', alt='')
+                div
+                  div
+                    .nk-box-1
+                      img.nk-img-fit(src='assets/images/partner-logo-2-dark.png', alt='')
+                div
+                  div
+                    .nk-box-1
+                      img.nk-img-fit(src='assets/images/partner-logo-3-dark.png', alt='')
+                div
+                  div
+                    .nk-box-1
+                      img.nk-img-fit(src='assets/images/partner-logo-4-dark.png', alt='')
+                div
+                  div
+                    .nk-box-1
+                      img.nk-img-fit(src='assets/images/partner-logo-5-dark.png', alt='')
+                div
+                  div
+                    .nk-box-1
+                      img.nk-img-fit(src='assets/images/partner-logo-6-dark.png', alt='')
+                div
+                  div
+                    .nk-box-1
+                      img.nk-img-fit(src='assets/images/partner-logo-7-dark.png', alt='')
+                div
+                  div
+                    .nk-box-1
+                      img.nk-img-fit(src='assets/images/partner-logo-8-dark.png', alt='')
+        // END: Partners
+        // START: Blog
+        #blog.nk-box.bg-gray-1
+          .nk-gap-4.mt-5
+          h2.text-xs-center.display-4 Latest Blog
+          .nk-gap.mnt-6
+          .container
+            .row
+              .col-lg-8.offset-lg-2
+                .text-xs-center
+                  | Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. Etiam,pellentesque faucibus. Vestibulum gravida volutpat ipsum non ultrices.
+          .nk-gap-2.mt-12
+          .container
+            // START: Carousel
+            .nk-carousel-2.nk-carousel-x2.nk-carousel-no-margin.nk-carousel-all-visible.nk-blog-isotope(data-dots='true')
+              .nk-carousel-inner
+                div
+                  div
+                    .pl-15.pr-15
+                      .nk-blog-post
+                        .nk-post-thumb
+                          a(href='blog-single.html')
+                            img.nk-img-stretch(src='assets/images/post-1-mid.jpg', alt='')
+                          .nk-post-category
+                            a(href='#') Nature
+                        h2.nk-post-title.h4
+                          a(href='blog-single.html') Something I need to tell you
+                        .nk-post-date
+                          | September 18, 2016
+                        .nk-post-text
+                          p
+                            | That female isn't midst divide kind upon seas lights greater green creature lights brought.
+                    .nk-gap-1
+                div
+                  div
+                    .pl-15.pr-15
+                      .nk-blog-post
+                        .nk-post-thumb
+                          a(href='blog-single.html')
+                            img.nk-img-stretch(src='assets/images/post-3-mid.jpg', alt='')
+                          .nk-post-category
+                            a(href='#') Nature
+                        h2.nk-post-title.h4
+                          a(href='blog-single.html') The History of Nature
+                        .nk-post-date
+                          | August 27, 2016
+                        .nk-post-text
+                          p
+                            | Third is fly. From one under in itself two waters, all own. Said male shall greater own grass.
+                    .nk-gap-1
+                div
+                  div
+                    .pl-15.pr-15
+                      .nk-blog-post
+                        .nk-post-thumb
+                          a(href='blog-single.html')
+                            img.nk-img-stretch(src='assets/images/post-4-mid.jpg', alt='')
+                          .nk-post-category
+                            a(href='#') Branding
+                        h2.nk-post-title.h4
+                          a(href='blog-single.html') Are you doing the Right Way?
+                        .nk-post-date
+                          | August 14, 2016
+                        .nk-post-text
+                          p
+                            | Which all, morning isn't. Female and own living dry, and morning lesser first he stars under years thing.
+                    .nk-gap-1
+                div
+                  div
+                    .pl-15.pr-15
+                      .nk-blog-post
+                        .nk-post-thumb
+                          a(href='blog-single.html')
+                            img.nk-img-stretch(src='assets/images/post-5-mid.jpg', alt='')
+                          .nk-post-category
+                            a(href='#') Design
+                        h2.nk-post-title.h4
+                          a(href='blog-single.html') Ten things about Photography
+                        .nk-post-date
+                          | August 14, 2016
+                        .nk-post-text
+                          p
+                            | Be forth, god for rule face abundantly all our two winged made. Is whose morning female.
+                    .nk-gap-1
+                div
+                  div
+                    .pl-15.pr-15
+                      .nk-blog-post
+                        .nk-post-thumb
+                          a(href='blog-single.html')
+                            img.nk-img-stretch(src='assets/images/post-6-mid.jpg', alt='')
+                          .nk-post-category
+                            a(href='#') Design
+                        h2.nk-post-title.h4
+                          a(href='blog-single.html') Why you should Always First
+                        .nk-post-date
+                          | August 14, 2016
+                        .nk-post-text
+                          p
+                            | Lights give have herb. First. Seed lesser his a fruit. Stars good divide fish appear don't, third deep.
+                    .nk-gap-1
+            // END: Carousel
+          .nk-gap-5.mt-20
+        // END: Blog
+        // START: Contact Info
+        #contact.container
+          .nk-gap-5
+          .row.vertical-gap
+            .col-lg-5
+              // START: Info
+              h2.display-4 Contact Info:
+              .nk-gap.mnt-3
+              p
+                | Praesent interdum congue mauris, et fringilla lacus pel vitae. Quisque nisl mauris, aliquam eu ultrices vel, conse vitae sapien at imperdiet risus. Quisque cursus risus id. fermentum, in auctor quam consectetur.
+              ul.nk-contact-info
+                li
+                  strong Address:
+                  |  10111 Santa Monica Boulevard, LA
+                li
+                  strong Phone:
+                  |  +44 987 065 908
+                li
+                  strong Email:
+                  |  info@Example.com
+                li
+                  strong Fax:
+                  |  +44 987 065 909
+              // END: Info
+            .col-lg-7
+              // START: Form
+              form.nk-form.nk-form-ajax(action='#')
+                .row.vertical-gap
+                  .col-md-6
+                    input.form-control.required(type='text', name='name', placeholder='Your Name')
+                  .col-md-6
+                    input.form-control.required(type='email', name='email', placeholder='Your Email')
+                .nk-gap-1
+                input.form-control.required(type='text', name='title', placeholder='Your Title')
+                .nk-gap-1
+                textarea.form-control.required(name='message', rows='8', placeholder='Your Comment', aria-required='true')
+                .nk-gap-1
+                .nk-form-response-success
+                .nk-form-response-error
+                button.nk-btn Send Message
+              // END: Form
+          .nk-gap-5
+        // END: Contact Info
+        //
+          START: Footer
+        footer.nk-footer
+          .nk-footer-cont
+            .container.text-xs-center
+              .nk-footer-social
+                ul
+                  li
+                    a(href='https://twitter.com/nkdevv')
+                      i.fa.fa-twitter
+                  li
+                    a(href='https://www.facebook.com/unvabdesign/')
+                      i.fa.fa-facebook
+                  li
+                    a(href='https://dribbble.com/_nK')
+                      i.fa.fa-dribbble
+                  li
+                    a(href='https://www.instagram.com/unvab/')
+                      i.fa.fa-instagram
+              .nk-footer-text
+                p 2016 © Design by Unvab. Code by nK
+        // END: Footer
+        // START: Scripts
+        script(src='assets/js/combined.js')
+        // END: Scripts
