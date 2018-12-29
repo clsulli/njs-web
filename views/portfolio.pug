@@ -1,0 +1,207 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Snow | Portfolio
+    meta(name='description', content='Snow - Clean & Minimal Portfolio HTML template.')
+    meta(name='keywords', content='portfolio, clean, minimal, blog, template, portfolio website')
+    meta(name='author', content='nK')
+    link(rel='icon', type='image/png', href='/images/favicon.png')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // START: Styles
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='/css/combined.css')
+    // END: Styles
+  body
+    header.nk-header.nk-header-opaque
+      //
+        START: Navbar
+      nav.nk-navbar.nk-navbar-top
+        .container
+          .nk-nav-table
+            a.nk-nav-logo(href='index')
+              img.nk-nav-logo-onscroll(src='/images/AHP_logo.png', alt='', width='300')
+              img(src='/images/AHP_logo.png', alt='', width='300')
+            ul.nk-nav.nk-nav-right.hidden-md-down(data-nav-mobile='#nk-nav-mobile')
+              li
+                a(href='index#about') About
+              li
+                a(href='index#contact') Contact
+              li.active
+                a(href='portfolio') Portfolio
+              li
+                a(href='blog') Blog
+            ul.nk-nav.nk-nav-right.nk-nav-icons
+              li.single-icon.hidden-lg-up
+                a.nk-navbar-full-toggle(href='#')
+                  span.nk-icon-burger
+                    span.nk-t-1
+                    span.nk-t-2
+                    span.nk-t-3
+      // END: Navbar
+      //
+        START: Navbar Mobile
+      nav#nk-nav-mobile.nk-navbar.nk-navbar-full.nk-navbar-align-center
+        .nk-navbar-bg
+          .bg-image(style="background-image: url('/images/bg-menu.jpg')")
+        .nk-nav-table
+          .nk-nav-row
+            .container
+              .nk-nav-header
+                .nk-nav-logo
+                  a.nk-nav-logo(href='index')
+                    img(src='/images/logo-light.svg', alt='', width='85')
+                .nk-nav-close.nk-navbar-full-toggle
+                  span.nk-icon-close
+          .nk-nav-row-full.nk-nav-row
+            .nano
+              .nano-content
+                .nk-nav-table
+                  .nk-nav-row.nk-nav-row-full.nk-nav-row-center.nk-navbar-mobile-content
+                    ul.nk-nav
+                      // Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"]
+          .nk-nav-row
+            .container
+              .nk-nav-social
+                ul
+                  li
+                    a(href='https://twitter.com/nkdevv')
+                      i.fa.fa-twitter
+                  li
+                    a(href='https://www.facebook.com/unvabdesign/')
+                      i.fa.fa-facebook
+                  li
+                    a(href='https://dribbble.com/_nK')
+                      i.fa.fa-dribbble
+                  li
+                    a(href='https://www.instagram.com/unvab/')
+                      i.fa.fa-instagram
+      // END: Navbar Mobile
+      .nk-main
+        .container
+          // START: Filter
+          .nk-pagination.nk-pagination-nobg.nk-pagination-center
+            a(href='#nk-toggle-filter')
+              span.nk-icon-squares
+          ul.nk-isotope-filter
+            li.active(data-filter='*') All
+            li(data-filter='Branding') Drone
+            li(data-filter='Print') Print
+            li(data-filter='Photography') Photography
+            li(data-filter='Design') Real Estate
+            li(data-filter='Mockup') Mockup
+          // END: Filter
+          .nk-portfolio-list.nk-isotope.nk-isotope-3-cols
+            .nk-isotope-item(data-filter='Mockup')
+              .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                a.nk-portfolio-item-link(href='portfolio-single')
+                .nk-portfolio-item-image
+                  div(style="background-image: url('https://picsum.photos/500/?image=1061');")
+                .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                  div
+                    h2.portfolio-item-title.h3 Vinyl Record
+                    .portfolio-item-category Mockup
+            .nk-isotope-item(data-filter='Print')
+              .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                a.nk-portfolio-item-link(href='portfolio-single')
+                .nk-portfolio-item-image
+                  div(style="background-image: url('https://picsum.photos/500/?image=1064');")
+                .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                  div
+                    h2.portfolio-item-title.h3 Modern T-Shirt
+                    .portfolio-item-category Print
+            .nk-isotope-item(data-filter='Branding')
+              .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                a.nk-portfolio-item-link(href='portfolio-single')
+                .nk-portfolio-item-image
+                  div(style="background-image: url('https://picsum.photos/500/?image=1056');")
+                .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                  div
+                    h2.portfolio-item-title.h3 Minimal Bag
+                    .portfolio-item-category Branding
+            .nk-isotope-item(data-filter='Design')
+              .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                a.nk-portfolio-item-link(href='portfolio-single')
+                .nk-portfolio-item-image
+                  div(style="background-image: url('https://picsum.photos/500/?image=1057');")
+                .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                  div
+                    h2.portfolio-item-title.h3 Clean & Groovy
+                    .portfolio-item-category Design
+            .nk-isotope-item(data-filter='Design')
+              .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                a.nk-portfolio-item-link(href='portfolio-single')
+                .nk-portfolio-item-image
+                  div(style="background-image: url('https://picsum.photos/500/?image=1051');")
+                .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                  div
+                    h2.portfolio-item-title.h3 Minimal Mobile App
+                    .portfolio-item-category Design
+            .nk-isotope-item(data-filter='Print')
+              .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                a.nk-portfolio-item-link(href='portfolio-single')
+                .nk-portfolio-item-image
+                  div(style="background-image: url('https://picsum.photos/500/?image=1052');")
+                .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                  div
+                    h2.portfolio-item-title.h3 White T-Shirt
+                    .portfolio-item-category Print
+            .nk-isotope-item(data-filter='Branding')
+              .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                a.nk-portfolio-item-link(href='portfolio-single')
+                .nk-portfolio-item-image
+                  div(style="background-image: url('https://picsum.photos/500/?image=1049');")
+                .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                  div
+                    h2.portfolio-item-title.h3 Business Card
+                    .portfolio-item-category Branding
+            .nk-isotope-item(data-filter='Photography')
+              .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                a.nk-portfolio-item-link(href='portfolio-single')
+                .nk-portfolio-item-image
+                  div(style="background-image: url('https://picsum.photos/500/?image=1044');")
+                .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                  div
+                    h2.portfolio-item-title.h3 Heja Stockholm
+                    .portfolio-item-category Photography
+            .nk-isotope-item(data-filter='Photography')
+              .nk-portfolio-item.nk-portfolio-item-square.nk-portfolio-item-info-style-1
+                a.nk-portfolio-item-link(href='portfolio-single')
+                .nk-portfolio-item-image
+                  div(style="background-image: url('https://picsum.photos/500/?image=1039');")
+                .nk-portfolio-item-info.nk-portfolio-item-info-center.text-xs-center
+                  div
+                    h2.portfolio-item-title.h3 Paper Bag
+                    .portfolio-item-category Photography
+          .nk-gap-4
+        // START: Pagination
+        .nk-pagination.nk-pagination-center
+          a(href='#') Load More Works
+        // END: Pagination
+        //
+          START: Footer
+        footer.nk-footer
+          .nk-footer-cont
+            .container.text-xs-center
+              .nk-footer-social
+                ul
+                  li
+                    a(href='https://twitter.com/nkdevv')
+                      i.fa.fa-twitter
+                  li
+                    a(href='https://www.facebook.com/unvabdesign/')
+                      i.fa.fa-facebook
+                  li
+                    a(href='https://dribbble.com/_nK')
+                      i.fa.fa-dribbble
+                  li
+                    a(href='https://www.instagram.com/unvab/')
+                      i.fa.fa-instagram
+              .nk-footer-text
+                p 2016 © Design by Unvab. Code by nK
+        // END: Footer
+        // START: Scripts
+        script(src='/js/combined.js')
+        // END: Scripts

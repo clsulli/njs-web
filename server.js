@@ -16,8 +16,19 @@ server.use(express.static(path.join(_dirname, '/public')));
 server.set('view engine', 'pug');
 
 // TODO create separate router file
+// Index route
 server.get('/', (request, response) => {
     response.render('index');
+});
+
+// Alternate index route
+server.get('/index', (request, response) => {
+    response.render('index');
+})
+
+// Portfolio route
+server.get('/portfolio', (request, response) => {
+    response.render('portfolio');
 });
 
 // Tell server to start listening
