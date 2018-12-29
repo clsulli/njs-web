@@ -1,0 +1,159 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Snow | Work
+    meta(name='description', content='Snow - Clean & Minimal Portfolio HTML template.')
+    meta(name='keywords', content='portfolio, clean, minimal, blog, template, portfolio website')
+    meta(name='author', content='nK')
+    link(rel='icon', type='image/png', href='/images/favicon.png')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // START: Styles
+    // Google Fonts
+    link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='/css/combined.css')
+    link(rel='stylesheet', href='/css/custom.css')
+    link(rel="stylesheet", href="https://cdn.pannellum.org/2.4/pannellum.css")
+    // END: Styles
+  body
+    header.nk-header.nk-header-opaque
+      //
+        START: Navbar
+      nav.nk-navbar.nk-navbar-top
+        .container
+          .nk-nav-table
+            a.nk-nav-logo(href='index')
+              img.nk-nav-logo-onscroll(src='/images/AHP_logo.png', alt='', width='300')
+              img(src='/images/AHP_logo.png', alt='', width='300')
+            ul.nk-nav.nk-nav-right.hidden-md-down(data-nav-mobile='#nk-nav-mobile')
+              li
+                a(href='index#about') About
+              li
+                a(href='index#contact') Contact
+              li
+                a(href='portfolio') Portfolio
+              li
+                a(href='blog') Blog
+            ul.nk-nav.nk-nav-right.nk-nav-icons
+              li.single-icon.hidden-lg-up
+                a.nk-navbar-full-toggle(href='#')
+                  span.nk-icon-burger
+                    span.nk-t-1
+                    span.nk-t-2
+                    span.nk-t-3
+      // END: Navbar
+      //
+        START: Navbar Mobile
+      nav#nk-nav-mobile.nk-navbar.nk-navbar-full.nk-navbar-align-center
+        .nk-navbar-bg
+          .bg-image(style="background-image: url('/images/bg-menu.jpg')")
+        .nk-nav-table
+          .nk-nav-row
+            .container
+              .nk-nav-header
+                .nk-nav-logo
+                  a.nk-nav-logo(href='index')
+                    img(src='/images/AHP_logo.png', alt='', width='85')
+                .nk-nav-close.nk-navbar-full-toggle
+                  span.nk-icon-close
+          .nk-nav-row-full.nk-nav-row
+            .nano
+              .nano-content
+                .nk-nav-table
+                  .nk-nav-row.nk-nav-row-full.nk-nav-row-center.nk-navbar-mobile-content
+                    ul.nk-nav
+                      // Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"]
+          .nk-nav-row
+            .container
+              .nk-nav-social
+                ul
+                  li
+                    a(href='https://twitter.com/nkdevv')
+                      i.fa.fa-twitter
+                  li
+                    a(href='https://www.facebook.com/unvabdesign/')
+                      i.fa.fa-facebook
+                  li
+                    a(href='https://dribbble.com/_nK')
+                      i.fa.fa-dribbble
+                  li
+                    a(href='https://www.instagram.com/unvab/')
+                      i.fa.fa-instagram
+      // END: Navbar Mobile
+      .nk-main
+        .container
+          .nk-portfolio-single
+            .nk-gap-4.mb-14
+            h1.nk-portfolio-title.display-4 Video Project
+            .row.vertical-gap
+              .col-lg-8
+                .nk-portfolio-info
+                  .nk-portfolio-text
+                    p
+                      | Nullam lobortis neque turpis, nec tempus sem pharetra at. Donec et quam, ullamcorper velit. Aliquam maximus ullamcorper ligula, at placerat dui hendrerit sed. Sed metus urna, bibendum id tortor, feugiat ipsum. Aliquam vehicula neque sit amet dolor malesuada pretium.
+                    p
+                      | Curabitur tristique, felis ut mattis auctor, elit ante laoreet libero, ac lorem quam vitae libero. Suspen disse aliquet eget risus quis vehicula.
+              .col-lg-4
+                table.nk-portfolio-details
+                  tbody
+                    tr
+                      td
+                        strong Client:
+                      td Anna Doe
+                    tr
+                      td
+                        strong Date:
+                      td 06.20.2016
+                    tr
+                      td
+                        strong Share:
+                      td
+                        a(href='#', title='Share page on Facebook', data-share='facebook') Facebook
+                        | ,
+                        a(href='#', title='Share page on Twitter', data-share='twitter') Twitter
+                        | ,
+                        a(href='#', title='Share page on Pinterest', data-share='pinterest') Pinterest
+            .nk-gap-4.mt-14
+        div.tourWrapper
+            iframe(style="border-style:none;" allowFullscreen src='https://cdn.pannellum.org/2.4/pannellum.htm?panorama=https://pannellum.org/images/alma.jpg')
+        img.nk-img-fit(src='/images/portfolio-4-video-thumb.jpg')
+        // START: Pagination
+        .nk-pagination.nk-pagination-center
+          .container
+            a.nk-pagination-prev(href='#')
+              span.pe-7s-angle-left
+              |  Previous Work
+            a.nk-pagination-center(href='#')
+              span.nk-icon-squares
+            a.nk-pagination-next(href='#')
+              | Next Work 
+              span.pe-7s-angle-right
+        // END: Pagination
+        //
+          START: Footer
+        footer.nk-footer
+          .nk-footer-cont
+            .container.text-xs-center
+              .nk-footer-social
+                ul
+                  li
+                    a(href='https://twitter.com/nkdevv')
+                      i.fa.fa-twitter
+                  li
+                    a(href='https://www.facebook.com/unvabdesign/')
+                      i.fa.fa-facebook
+                  li
+                    a(href='https://dribbble.com/_nK')
+                      i.fa.fa-dribbble
+                  li
+                    a(href='https://www.instagram.com/unvab/')
+                      i.fa.fa-instagram
+              .nk-footer-text
+                p 2016 © Design by Unvab. Code by nK
+        // END: Footer
+        // START: Scripts
+        script(src='/js/combined.js')
+        script(src="https://cdn.pannellum.org/2.4/pannellum.js")
+        script(src="/js/tour.js")
+        // END: Scripts

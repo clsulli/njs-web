@@ -31,6 +31,11 @@ server.get('/portfolio', (request, response) => {
     response.render('portfolio');
 });
 
+// Portfolio item route
+server.get('/portfolio-single', (request, response) => {
+    response.render('portfolio-single');
+})
+
 // Tell server to start listening
 server.listen(port, () => {
     console.log('http://localhost:${port}');
