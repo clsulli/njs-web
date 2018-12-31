@@ -36,6 +36,16 @@ server.get('/portfolio-single', (request, response) => {
     response.render('portfolio-single');
 })
 
+// // Tour image route
+// server.get('/tour/room-1', (request, response) => {
+//     response.sendFile('/images/tour/room-1.jpg');
+// });
+
+// // Tour htm route
+// server.get('/tour/htm', (request, response) => {
+//     response.sendFile('/tourCFG/');
+// })
+
 // Tell server to start listening
 server.listen(port, () => {
     console.log('http://localhost:${port}');

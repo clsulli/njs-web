@@ -115,8 +115,20 @@ html(lang='en')
                         | ,
                         a(href='#', title='Share page on Pinterest', data-share='pinterest') Pinterest
             .nk-gap-4.mt-14
-        div.tourWrapper
-            iframe(style="border-style:none;" allowFullscreen src='https://cdn.pannellum.org/2.4/pannellum.htm?panorama=https://pannellum.org/images/alma.jpg')
+            .row.vertical-gap
+                .col-md-6
+                input#currPitch.form-control.required(type='text', name='pitch', placeholder='Pitch')
+                .col-md-6
+                input#currYaw.form-control.required(type='text', name='yaw', placeholder='Yaw')
+            .nk-gap-1
+            .nk-form-response-success
+            .nk-form-response-error
+            button.nk-btn Send Message
+
+        div.tourWrapper#tour
+            iframe(src='https://app.lapentor.com/sphere/alan-example', scrolling='no', allowfullscreen='true', webkitallowfullscreen='true', mozallowfullscreen='true', oallowfullscreen='true', msallowfullscreen='true', width='100%', height='400px', frameborder='0')
+            // iframe(style="border-style:none;" allowFullscreen src='https://cdn.pannellum.org/2.4/pannellum.htm?panorama=https://pannellum.org/images/alma.jpg')
+            //div#panorama(style="width:95%;")
         img.nk-img-fit(src='/images/portfolio-4-video-thumb.jpg')
         // START: Pagination
         .nk-pagination.nk-pagination-center
